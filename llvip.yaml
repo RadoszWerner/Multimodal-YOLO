@@ -1,0 +1,5 @@
+path: LLVIP_fused
+train: train
+val: test
+nc: 1 # Liczba klas (np. ludzi)
+names: ["person"]
