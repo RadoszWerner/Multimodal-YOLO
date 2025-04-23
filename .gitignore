@@ -1,0 +1,6 @@
+/datasets/
+/LLVIP/
+/runs/
+/venv/
+
+*.pt
