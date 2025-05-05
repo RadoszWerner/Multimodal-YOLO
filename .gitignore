@@ -1,6 +1,7 @@
 /datasets/
 /LLVIP/
 /runs/
-/venv/
+/venv1/
+/llvip_mod/
 
 *.pt

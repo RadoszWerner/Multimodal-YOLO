@@ -1,0 +1,8 @@
+train: D:/Projects/multimodal-YOLO/llvip_mod/train/
+val: D:/Projects/multimodal-YOLO/llvip_mod/val/
+test: D:/Projects/multimodal-YOLO/llvip_mod/test/
+rgb_dir: rgb/
+ir_dir: ir/
+annotations_dir: Annotations/
+nc: 1
+names: ["person"]
