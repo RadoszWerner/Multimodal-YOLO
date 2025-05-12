@@ -1,6 +1,0 @@
-train: ../llvip_mod/train/rgb/
-val: ../llvip_mod/val/rgb/
-test: ../llvip_mod/test/rgb/
-names: ["person"]
-nc: 1
-path: ../llvip_mod/
