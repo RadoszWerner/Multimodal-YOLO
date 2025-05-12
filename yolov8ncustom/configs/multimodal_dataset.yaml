@@ -1,0 +1,17 @@
+# Dataset configuration
+streams:
+  rgb: ../LLVIP/visible
+  ir: ../LLVIP/infrared
+
+train:
+  rgb: path/to/train/rgb
+  ir: path/to/train/ir
+  labels: path/to/train/labels
+
+val:
+  rgb: path/to/val/rgb
+  ir: path/to/val/ir
+  labels: path/to/val/labels
+
+nc: 1
+names: [person]

@@ -1,0 +1,6 @@
+train: ../llvip_mod/train/ir/
+val: ../llvip_mod/val/ir/
+test: ../llvip_mod/test/ir/
+names: ["person"]
+nc: 1
+path: ../llvip_mod/

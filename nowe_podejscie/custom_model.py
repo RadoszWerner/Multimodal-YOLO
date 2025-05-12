@@ -8,16 +8,14 @@ from ultralytics.nn.modules import Conv, C2f, SPPF, Concat, Detect
 
 class DualBackboneYOLO(YOLO):
     def __init__(self, model='custom_yolov8_dual_backbone.yaml', pretrained=True):
-        # Wczytaj niestandardowy plik YAML
         with open(model, 'r') as f:
             cfg_dict = yaml.safe_load(f)
 
-        # Inicjalizuj nadrzędną klasę YOLO bez modelu, ustawiamy task='detect'
-        super().__init__(model='yolov8m.yaml', task='detect')  # Używamy domyślnego YAML jako placeholder
+        super().__init__(model='yolov8m.yaml', task='detect')
 
         # Zainicjuj niestandardowy model
         self.model = CustomDualBackboneModel(cfg_dict, nc=cfg_dict['nc'])
-        self.cfg_dict = cfg_dict  # Zapisz konfigurację dla innych metod
+        self.cfg_dict = cfg_dict
 
         if pretrained:
             self.load_pretrained_weights()
